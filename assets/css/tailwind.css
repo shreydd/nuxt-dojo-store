@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* apply from tailwind */
+    @apply bg-gray-50;
+}
+
+/* make components */
+@layer components {
+    .btn {
+        @apply  bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+        /* jsyk all these styles are from tailwind */
+    }
+    .card {
+        @apply  p-3 rounded-md bg-white shadow-md h-full;
+    }
+}

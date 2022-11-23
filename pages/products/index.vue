@@ -18,6 +18,14 @@
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
     // getting the data and reference / call it as products in this component / page
 
+    // overrides default meta tag values
+    useHead({
+        title: 'Nuxt Dojo | Merch',
+        meta: [
+            {name: 'description', content: 'Nuxt 3 merch'}
+        ]
+    })
+
 </script>
 
 <style scoped>

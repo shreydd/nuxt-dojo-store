@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #12b488;
+    --secondary-color: #1ed19e;
+}
+
 body {
     /* apply from tailwind */
     @apply bg-gray-50;
@@ -10,10 +15,20 @@ body {
 /* make components */
 @layer components {
     .btn {
-        @apply  bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+        @apply  bg-[#12b488] text-white px-5 py-3 rounded-md text-sm text-white;
         /* jsyk all these styles are from tailwind */
     }
     .card {
         @apply  p-3 rounded-md bg-white shadow-md h-full;
     }
+}
+
+.text-primary-color {
+    color: var(--primary-color);
+}
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+.bg-secondary-color {
+    background-color: var(--secondary-color);
 }

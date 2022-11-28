@@ -13,16 +13,13 @@
         layout: 'products'
     })
 
-    // fetch products
-    // useFetch is a built-in composable provided by nuxt
-    const { data: products } = await useFetch('https://fakestoreapi.com/products')
-    // getting the data and reference / call it as products in this component / page
+    const products = await getProducts();
 
     // overrides default meta tag values
     useHead({
-        title: 'Nuxt Dojo | Merch',
+        title: 'Nuxt Dojo | Store',
         meta: [
-            {name: 'description', content: 'Nuxt 3 merch'}
+            {name: 'description', content: 'Nuxt 3 store template'}
         ]
     })
 

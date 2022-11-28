@@ -12,7 +12,8 @@
         Portfolio template for independent creators and artists.
       </p>
       <NuxtLink
-        to="/products"
+        to="https://github.com/shreydd/nuxt-dojo-store"
+        target="_blank"
         class="
           mt-8
           inline-flex

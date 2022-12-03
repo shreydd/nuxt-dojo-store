@@ -10,7 +10,7 @@
             <div class="card my-7">
                     Total items: {{cart.length}}
                     <br />
-                    Total price: 
+                    Total price: ${{totalPrice}}
             </div>
         </div>
     </div>
@@ -19,6 +19,10 @@
 <script setup>
     const cart = useState('cart');
     const totalPrice = ref([]);
+
+    const calTotal = await getCartTotalValue(cart.value);
+    console.log(calTotal)
+    totalPrice.value = calTotal
 </script>
 
 <style lang="scss" scoped>

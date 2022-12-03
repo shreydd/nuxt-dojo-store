@@ -9,6 +9,8 @@
             </div>
             <div class="card my-7">
                     Total items: {{cart.length}}
+                    <br />
+                    Total price: 
             </div>
         </div>
     </div>
@@ -16,6 +18,7 @@
 
 <script setup>
     const cart = useState('cart');
+    const totalPrice = ref([]);
 </script>
 
 <style lang="scss" scoped>
